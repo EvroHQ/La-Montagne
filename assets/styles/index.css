@@ -11,7 +11,7 @@ ul {
 }
 
 body {
-  background: url("/assets/img/bg.jpg") center/cover fixed;
+  background: url("/assets/img/background.jpg") center/cover fixed;
 }
 
 .main {
@@ -266,10 +266,6 @@ body {
   .container .main__container img {
     padding-top: 40px;
   }
-}
-
-body {
-  background: url("/assets/img/bg.jpg") center/cover fixed;
 }
 
 .hero__container {
