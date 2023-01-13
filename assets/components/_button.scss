@@ -1,0 +1,21 @@
+button {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 200px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: $font1;
+    letter-spacing: 1.5px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
+    margin: 60px auto;
+    transition: 0.2s all ease;
+
+    &:hover {
+        background-color: rgb(34, 34, 34);
+        color: #fff;
+    }
+}

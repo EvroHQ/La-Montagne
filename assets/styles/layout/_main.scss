@@ -1,0 +1,272 @@
+// NAVBAR //
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1800px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.137);
+    margin: 0 40px;
+    text-align: center;
+    margin-top: -80px;
+    align-items: center;
+
+    .hover {
+        height: 80px;
+        width: 100%;
+        max-width: 600px;
+
+        @media screen and (max-width: 1100px) {
+            max-width: 1200px;
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 1100px) {
+
+        :nth-child(1):hover {
+            background: none;
+            color: #fff;
+        }
+
+        :nth-child(2):hover {
+            background: none;
+            color: #fff;
+        }
+
+        :nth-child(3):hover {
+            background: none;
+            color: #fff;
+        }
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-family: $font1;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 100%;
+        height: 100%;
+
+
+        &:hover {
+            background-color: rgb(233, 233, 233);
+            color: rgb(34, 34, 34);
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 0.6rem;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.right {
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
+}
+
+
+.right i {
+    list-style: none;
+    cursor: pointer;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: 0.3s all ease;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+
+.main__container__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1800px;
+    background-color: #fff;
+    margin: 0 40px;
+    padding-top: 5em;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.200);
+
+    @media screen and (max-width: 1100px) {
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 1rem;
+        font-family: $font2;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .main__text {
+        font-size: calc(14px + 2 * (100vw - 1400px) / 1200);
+        font-family: $font2;
+        position: relative;
+        text-align: center;
+        max-width: 75%;
+        margin: 0 auto;
+        margin-top: 30px;
+        color: rgb(34, 34, 34);
+
+        @media screen and (max-width: 1100px) {
+            margin: 30px auto;
+            width: 70%;
+        }
+    }
+
+    h1 {
+        padding: 1em 20px;
+        color: rgb(34, 34, 34);
+        font-size: calc(12px + 4 * ((100vw - 400px) / 1200));
+        font-family: $font1;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        max-width: 280px;
+        text-align: center;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        padding: 0 60px;
+
+        @media screen and (max-width: 1100px) {
+            width: 70%;
+            padding: 0;
+        }
+    }
+
+    span {
+        margin-top: -80px;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+        @media screen and (max-width: 1100px) {
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            margin: 30px 0 60px;
+        }
+    }
+}
+
+// MAIN //
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1800px;
+        background-color: #fff;
+        margin: 0 40px;
+        padding-top: 5em;
+        text-align: center;
+        padding-bottom: 40px;
+
+        @media screen and (max-width: 540px) {
+            padding-top: 4em;
+        }
+
+        h1 {
+            padding: 1em 20px;
+            color: rgb(34, 34, 34);
+            font-size: calc(18px + 8 * ((100vw - 320px) / 480));
+            font-family: $font1;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            max-width: 800px;
+            text-align: center;
+            margin: 0 auto;
+            width: 90%;
+
+        }
+
+        .date__p {
+            font-size: 1rem;
+            font-family: $font2;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            text-align: center;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 600px;
+                height: 1px;
+                background: rgba(107, 107, 107, 0.26);
+                right: 10%;
+                top: 50%;
+                position: absolute;
+                width: 70%;
+            }
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 600px;
+                height: 1px;
+                background: rgba(107, 107, 107, 0.26);
+                left: 10%;
+                top: 50%;
+                position: absolute;
+                width: 70%;
+            }
+
+            span {
+                background-color: #fff;
+                z-index: 1;
+                position: inherit;
+                padding: 0 40px;
+            }
+        }
+
+        .main__p {
+            color: rgb(107, 107, 107);
+            font-size: 14px;
+            font-family: $font2;
+            letter-spacing: 1.5px;
+            font-weight: 400;
+            text-align: center;
+            max-width: 730px;
+            margin: 0 auto;
+            line-height: 2rem;
+            font-style: italic;
+            padding: 0 30px;
+
+            @media screen and (max-width: 540px) {
+                font-size: 12px;
+            }
+        }
+
+        img {
+            padding: 5em 0 0 0;
+            max-width: 80%;
+            margin: 0 auto;
+
+            @media screen and (max-width: 540px) {
+                padding-top: 40px;
+            }
+        }
+    }
+}
